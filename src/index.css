@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 200 20% 90%;
+
+    --card: 222 40% 8%;
+    --card-foreground: 200 20% 90%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 200 20% 90%;
+
+    --primary: 192 100% 42%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 14%;
+    --secondary-foreground: 200 20% 80%;
+
+    --muted: 222 30% 12%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 38 95% 55%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 70% 45%;
+    --success-foreground: 222 47% 6%;
+
+    --warning: 38 95% 55%;
+    --warning-foreground: 222 47% 6%;
+
+    --critical: 0 80% 55%;
+    --critical-foreground: 0 0% 100%;
+
+    --border: 222 30% 16%;
+    --input: 222 30% 14%;
+    --ring: 192 100% 42%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 200 20% 80%;
+    --sidebar-primary: 192 100% 42%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 222 30% 12%;
+    --sidebar-accent-foreground: 200 20% 90%;
+    --sidebar-border: 222 30% 14%;
+    --sidebar-ring: 192 100% 42%;
+
+    --glow-primary: 0 0 20px hsl(192 100% 42% / 0.3);
+    --glow-success: 0 0 20px hsl(145 70% 45% / 0.3);
+    --glow-warning: 0 0 20px hsl(38 95% 55% / 0.3);
+    --glow-critical: 0 0 20px hsl(0 80% 55% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .scada-panel {
+    @apply bg-card border border-border rounded-lg p-4;
+    box-shadow: inset 0 1px 0 0 hsl(222 30% 20% / 0.5);
+  }
+
+  .scada-glow {
+    box-shadow: var(--glow-primary);
+  }
+
+  .scada-glow-success {
+    box-shadow: var(--glow-success);
+  }
+
+  .scada-glow-warning {
+    box-shadow: var(--glow-warning);
+  }
+
+  .scada-glow-critical {
+    box-shadow: var(--glow-critical);
+  }
+
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .telemetry-value {
+    @apply font-mono text-2xl font-bold tracking-tight;
+  }
+
+  .grid-line {
+    stroke: hsl(222 30% 20%);
+    stroke-width: 0.5;
+  }
+}
+
+@layer utilities {
+  .text-glow-primary {
+    text-shadow: 0 0 10px hsl(192 100% 42% / 0.5);
+  }
+
+  .text-glow-success {
+    text-shadow: 0 0 10px hsl(145 70% 45% / 0.5);
+  }
+
+  .text-glow-warning {
+    text-shadow: 0 0 10px hsl(38 95% 55% / 0.5);
+  }
+
+  .text-glow-critical {
+    text-shadow: 0 0 10px hsl(0 80% 55% / 0.5);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
