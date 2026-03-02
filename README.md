@@ -1,65 +1,137 @@
-# Bharat Grid Intelligence (BGI)
+# 🚀 Bharat Grid Intelligence (BGI)
 
-Bharat Grid Intelligence (BGI) is a full-stack smart grid monitoring platform designed to simulate and visualize India’s electricity transmission and distribution network across national, state, and city levels. The system provides real-time telemetry, SCADA-style dashboards, interactive geographic maps, and intelligent alert management to monitor grid health, power flow, and infrastructure performance.
+**Bharat Grid Intelligence (BGI)** is a smart grid monitoring platform designed to simulate and visualize India’s electricity transmission and distribution network across national, state, and city levels.
 
-The platform models realistic Indian power infrastructure hierarchies — including substations, feeders, transformers, and load centers — and delivers live operational insights through multi-level dashboards with role-based access control.
+The system provides real-time telemetry, SCADA-style dashboards, interactive geographic maps, and intelligent alert management to monitor grid health, power flow, and infrastructure performance.
 
-## How to get started
+The platform models realistic Indian power infrastructure hierarchies — including substations, feeders, transformers, and load centers — and delivers live operational insights through multi-level dashboards.
 
-Clone the repository and install dependencies:
+---
 
-**Local Development**
+## 🌐 Live Demo
 
-If you want to work locally using your IDE, you can clone this repo and follow these steps:
+🔗 http://bgi-dashboard-ritik.s3-website.eu-north-1.amazonaws.com/
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+*(Deployed on AWS S3 static hosting)*
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ✨ Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- 🇮🇳 National, State, and City Level Grid Monitoring
+- ⚡ Real-time Telemetry Simulation
+- 🗺️ Interactive Maps with Feeders & Substations
+- 🚨 Intelligent Alert System with Status Indicators
+- 📊 Grid Health Metrics & Analytics
+- 🔐 Role-based UI Structure (Simulated)
+- 🎨 Modern SCADA-style Dark Dashboard UI
+- ☁️ AWS Deployment (S3 Static Hosting)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🏗️ Architecture Overview
+
+```
+Frontend (React + TypeScript)
+        ↓
+Real-time Simulation Layer
+        ↓
+Grid Visualization & Dashboards
+```
+
+The application simulates real-world grid monitoring workflows used in modern utility control systems.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+
+**Visualization**
+- Charts & Interactive Maps
+- Real-time data simulation
+
+**Deployment**
+- AWS S3 Static Hosting
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots here (very important for GitHub visibility)
+
+Examples:
+
+- National Dashboard
+- State Dashboard
+- City Feeder View
+
+---
+
+## ⚙️ Local Development
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/riki427/Bharat-Grid-Intelligence
+
+# Navigate to project
+cd Bharat-Grid-Intelligence
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Production Build
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Build the project for production:
-
-```sh
+```bash
 npm run build
 ```
 
-Then deploy the contents of the `dist` folder to your hosting provider.
+Upload the contents of the `dist` folder to your hosting provider.
+
+---
+
+## ☁️ Deployment
+
+This project is deployed using **AWS S3 static website hosting**, making it globally accessible with scalable cloud infrastructure.
+
+---
+
+## 🎯 Purpose
+
+This project demonstrates how modern software systems can enhance power grid visibility, operational efficiency, and infrastructure reliability using real-time monitoring and intelligent analytics.
+
+It serves as a conceptual simulation of next-generation smart grid control platforms used by utilities and grid operators.
+
+---
+
+## 🔮 Future Improvements
+
+- AI-based load prediction
+- Real IoT sensor integration
+- Failure forecasting
+- Mobile monitoring application
+- Backend telemetry service
+
+---
+
+## 👨‍💻 Author
+
+**Ritik Kumar**
