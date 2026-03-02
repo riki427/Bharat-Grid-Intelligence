@@ -1,4 +1,4 @@
-# Grid Guardian India
+# Bharat Grid Intelligence (BGI)
 
 Bharat Grid Intelligence (BGI) is a full-stack smart grid monitoring platform designed to simulate and visualize India’s electricity transmission and distribution network across national, state, and city levels. The system provides real-time telemetry, SCADA-style dashboards, interactive geographic maps, and intelligent alert management to monitor grid health, power flow, and infrastructure performance.
 
